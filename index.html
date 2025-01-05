@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Studio</title>
+    <title>The Moon Dance Studio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
+            color: #333;
         }
         .header {
-            background-color: #333;
+            background-color: #1e1e1e;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav a:hover {
+            background-color: #575757;
         }
         .main {
             padding: 20px;
@@ -30,8 +50,25 @@
             width: 80%;
             height: 450px;
         }
+        .classes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .class-card {
+            background-color: white;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .class-card:hover {
+            transform: scale(1.05);
+        }
         .footer {
-            background-color: #333;
+            background-color: #1e1e1e;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -43,7 +80,13 @@
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to Our Dance Studio</h1>
+        <h1>The Moon Dance Studio</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Classes</a>
+        <a href="#">Schedule</a>
+        <a href="#">Contact</a>
     </div>
     <div class="main">
         <h2>Experience the Joy of Dance</h2>
@@ -51,9 +94,23 @@
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/lybpqCbapB4" frameborder="0" allowfullscreen></iframe>
         </div>
+        <div class="classes">
+            <div class="class-card">
+                <h3>Ballet</h3>
+                <p>Graceful and elegant moves for all skill levels.</p>
+            </div>
+            <div class="class-card">
+                <h3>Hip Hop</h3>
+                <p>High-energy street dance styles to get your groove on.</p>
+            </div>
+            <div class="class-card">
+                <h3>Jazz</h3>
+                <p>Expressive and fun dance routines.</p>
+            </div>
+        </div>
     </div>
     <div class="footer">
-        <p>&copy; 2025 Dance Studio. All Rights Reserved.</p>
+        <p>&copy; 2025 The Moon Dance Studio. All Rights Reserved.</p>
     </div>
 </body>
 </html>
